@@ -1,0 +1,180 @@
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.NFT-card-component {
+  height: 700px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 30px;
+}
+
+.inside-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  height: 100%;
+}
+
+.image-container {
+  position: relative;
+  background: url(images/image-equilibrium.jpg);
+  border-radius: 20px;
+  max-width: 100%;
+  height: 350px;
+  background-size: cover;
+}
+
+.cover-image {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: top;
+}
+
+.cover-image img {
+  max-width: 100%;
+}
+
+/* Add this code to style the icon that will be displayed on hover */
+.image-overlay {
+  position: relative;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(
+    178,
+    100%,
+    50%,
+    0.7
+  ); /* Background color for the overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+  border-radius: 20px;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.image-overlay-icon {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 20pt;
+  color: white;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.title:hover {
+  color: hsl(178, 100%, 50%);
+  transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.description {
+  font-size: 15pt;
+  color: hsl(215, 51%, 70%);
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+.price-time-line {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-icon-number {
+  display: flex;
+  align-items: center;
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.price-icon-number img {
+  height: 20px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.time-left {
+  display: flex;
+  align-items: center;
+
+  color: hsl(215, 51%, 70%);
+  font-size: 10pt;
+}
+
+.time-left img {
+  height: 20px;
+  width: auto;
+  margin-right: 5px;
+}
+
+.horizontal-line {
+  border-top: 1px solid hsla(215, 51%, 70%, 0.3); /* Set the border style and color */
+  margin: 20px 0px; /* Add some spacing above and below the line */
+  align-items: center;
+}
+
+.creator {
+  color: white;
+  font-size: 15pt;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.img-container {
+  display: inline-flex;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.creator img {
+  height: 35px;
+  width: 35px;
+}
+
+.creation-of {
+  color: hsl(215, 51%, 70%);
+  margin-left: 8px;
+}
+
+.jules {
+  margin-left: 8px;
+}
+
+.jules:hover {
+  color: hsl(178, 100%, 50%);
+  transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
