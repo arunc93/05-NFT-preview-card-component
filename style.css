@@ -93,7 +93,7 @@ body {
 
 .title:hover {
   color: hsl(178, 100%, 50%);
-  transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+ transition: opacity 0.3s ease-in-out;
 }
 
 .description {
@@ -176,5 +176,5 @@ body {
 
 .jules:hover {
   color: hsl(178, 100%, 50%);
-  transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: opacity 0.3s ease-in-out;
 }
